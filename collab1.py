@@ -1,11 +1,12 @@
+# collaborator.py
 # Librerías.
 import socket
 import os
 
 HOST = 'localhost'
 PORT = 8000
-BASE_DIR = 'server'
-DOWNLOAD_DIR = os.path.join(BASE_DIR, 'downloadsCollab')
+BASE_DIR = 'collaborator'  # Directorio base
+DOWNLOAD_DIR = os.path.join(BASE_DIR, 'recipesCollab')  # Subcarpeta para las recetas
 
 # Asegurando que el directorio existe.
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
