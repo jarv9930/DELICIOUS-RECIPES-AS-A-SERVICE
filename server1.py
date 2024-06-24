@@ -9,13 +9,11 @@ HOST = 'localhost'
 PORT = 8000
 BASE_DIR = 'server'
 RECIPE_DIR = os.path.join(BASE_DIR, 'recipes')
-DOWNLOAD_DIR = os.path.join(BASE_DIR, 'downloadsCollab')
 USER_DB = os.path.join(BASE_DIR, 'users.json')
 AGREEMENT_DB = os.path.join(BASE_DIR, 'agreement.json')
 
-# Asegurando que el directorio base y subdirectorios existan.
+# Asegurando que el directorio base existe.
 os.makedirs(RECIPE_DIR, exist_ok=True)
-os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 if not os.path.exists(USER_DB):
     with open(USER_DB, 'w') as f:
